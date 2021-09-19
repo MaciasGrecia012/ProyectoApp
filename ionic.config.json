@@ -1,0 +1,7 @@
+{
+  "name": "Star Hill",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
