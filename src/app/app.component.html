@@ -1,3 +1,69 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu slide ='start' menuId= 'menuPrincipal'>
+    <ion-header>
+      <ion-toolbar color= "primary">
+      <ion-title>
+        <div>
+          <p>
+            Menu
+          </p>
+
+        </div>
+      </ion-title>
+    </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item routerLink= "/tabs/rutas/videos" routerDirection="root" routerLinkActive="active-item">
+            <ion-icon name= 'search' slot= 'start'></ion-icon>
+            <ion-label> Videos </ion-label>
+          </ion-item>
+
+          <ion-item routerLink= "/tabs/rutas/membresias" routerDirection="root" routerLinkActive="active-item">
+            <ion-icon name= 'star-half-outline' slot= 'start'></ion-icon>
+            <ion-label> Membresias </ion-label>
+          </ion-item>
+
+          <ion-item routerLink= "/tabs/rutas/comunicados" routerDirection="root" routerLinkActive="active-item">
+            <ion-icon name= 'mail-unread' slot= 'start'></ion-icon>
+            <ion-label> Comunicados </ion-label>
+          </ion-item>
+
+          <ion-item routerLink = "/tabs/rutas/redes-sociales" routerDirection="root" routerLinkActive="active-item">
+            <ion-icon name= 'at-outline' slot= 'start'></ion-icon>
+            <ion-label> Redes Sociales </ion-label>
+          </ion-item>
+
+          <ion-item routerLink= "/tabs/rutas/pagina-web" routerDirection="root" routerLinkActive="active-item">
+            <ion-icon name= 'earth-outline' slot= 'start'></ion-icon>
+            <ion-label> Pagina Web </ion-label>
+          </ion-item>
+
+          <ion-item routerLink= "/tabs/rutas/donaciones" routerDirection="root" routerLinkActive="active-item">
+            <ion-icon name= 'cash-outline' slot= 'start'></ion-icon>
+            <ion-label> Donaciones </ion-label>
+          </ion-item>
+          
+          <ion-item routerLink= "/tabs/rutas/canal-secundario" routerDirection="root" routerLinkActive="active-item">
+            <ion-icon name= 'logo-youtube' slot= 'start'></ion-icon>
+            <ion-label> Canal Secundario </ion-label>
+          </ion-item>
+          <ion-item routerLink= "/tabs/rutas/ajustes" routerDirection="root" routerLinkActive="active-item">
+            <ion-icon name= 'cog' slot= 'start'></ion-icon>
+            <ion-label> Ajustes </ion-label>
+          </ion-item>
+        
+          <ion-item routerLink= "/login">
+            <ion-icon name= 'exit-outline' slot= 'start'></ion-icon>
+            <ion-label> Salir </ion-label>
+          </ion-item>
+
+
+        </ion-menu-toggle>
+       </ion-list>
+      </ion-content>
+
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
 </ion-app>
